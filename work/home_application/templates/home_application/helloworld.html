@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head %}
+	<title>{% trans "蓝鲸开发框架" %}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+	{{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <style type="text/css">
+        #footer{
+            position: relative;
+            bottom: -40px;
+        }
+    </style>
+
+    <h2 class="page_title" id="page_title">Hello World Page</h2>
+    <form class="bk-form bk-inline-form">
+        <div class="bk-form-item is-required">
+          <div class="bk-form-content">
+            <input class="bk-form-input" type="text" id= "page_input" placeholder="Try input Hello">
+          </div>
+        </div>
+        <div class="bk-form-item">
+          <div class="bk-form-content">
+            <button class="bk-button bk-primary" title="submit" onclick="mySubmit();return false;">submit</button>
+          </div>
+         </div>
+    </form>
+{% endblock %}
+
+{% block extra_block %}
+   <script>
+    function mySubmit(){
+      let input = $("#page_input");
+      if(input.val() ===""){
+                  input.addClass("is-danger");
+                  return;
+      }
+      $.ajax({
+         url:'{{ SITE_URL }}sayhello/',
+         data:{
+               'input':input.val()
+         },
+         type:'POST',
+        //  dataType: "json",
+        //  async:false,
+         success:function(res){
+              $('#page_title').text(res.data);
+              input.val("");
+             console.log("test");
+         }
+      });
+    }
+   </script>
+{% endblock %}
+
+
+
+
+
