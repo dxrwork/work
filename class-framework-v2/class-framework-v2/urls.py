@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+urls config
+"""
+from django.conf.urls import patterns, include, url
+# Uncomment the next two lines to enable the admin:
+from django.contrib import admin
+# admin.autodiscover()
+
+# 公共URL配置
+urlpatterns = patterns(
+    '',
+    # Django后台数据库管理
+    url(r'^admin/', include(admin.site.urls)),
+    # 用户登录鉴权--请勿修改
+    url(r'^account/', include('account.urls')),
+    # 应用功能开关控制--请勿修改
+    url(r'^app_control/', include('app_control.urls')),
+    # 在home_application(根应用)里开始开发你的应用的主要功能
+    url(r'^', include('home_application.urls')),
+    # 会议管理
+    url(r'^iwork/', include('iwork.urls')),
+    # 磁盘容量
+    url(r'^get_capacity/', include('get_capacity.urls')),
+    # api入口
+    url(r'^api/get_capacity/', include('get_capacity.api_urls'))
+)
+
+
+handler404 = 'error_pages.views.error_404'
+handler500 = 'error_pages.views.error_500'
+handler403 = 'error_pages.views.error_403'
+handler401 = 'error_pages.views.error_401'
