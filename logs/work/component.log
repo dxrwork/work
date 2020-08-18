@@ -1,0 +1,527 @@
+ERROR [2020-08-11 10:02:33] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=5410e839f8f5450b9d4df51a10fb127c, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'N9rSWsEWNNsH8wXYUJ7I4b5ndAHkl00k25yXEp7hCgo'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "5410e839f8f5450b9d4df51a10fb127c"} 
+
+ERROR [2020-08-11 10:02:33] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:02:37] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=a25c851c1f2c4650b95532fe699c2a15, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'FplpgB4amZ3wgVAtnVFHl894T1bfe6VC2-IwmERJD7E'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "a25c851c1f2c4650b95532fe699c2a15"} 
+
+ERROR [2020-08-11 10:02:37] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:02:42] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=f2a9aae1854242539b48d102c8780254, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'G4-Y_cmQsMoOQSVDgw7BQV1iutot4FRlVMA_4GpmW2I'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "f2a9aae1854242539b48d102c8780254"} 
+
+ERROR [2020-08-11 10:02:42] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:02:51] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=8620ec63693946d0958eb68a7d6fb782, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '0KZZ8bWhXg6GwWzn7fpK1Xw5KoAmtVELtCN0IMhhNkg'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "8620ec63693946d0958eb68a7d6fb782"} 
+
+ERROR [2020-08-11 10:02:51] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:02:57] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=d1ffae9483d844f7a3fb38df87ba68d5, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'Dwi67g94_yjwvrhn_Y99BrTTsd9aqzgmRbV6MqLrSvc'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "d1ffae9483d844f7a3fb38df87ba68d5"} 
+
+ERROR [2020-08-11 10:02:57] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:03:12] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=24dec03eec9240f7ba2c824708162d06, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '-AWc9llRkoiLAFhdhCns_fTEBzbutlSe1qsx7EF-oRE'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "24dec03eec9240f7ba2c824708162d06"} 
+
+ERROR [2020-08-11 10:03:12] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:03:16] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=4fbd6bec638542f8a164d688e432704b, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'zW46kfRVCYuAlfB4SoflmcZWw0BRw1rAnz7EPTgT4gA'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "4fbd6bec638542f8a164d688e432704b"} 
+
+ERROR [2020-08-11 10:03:16] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:03:25] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=2cbc0c767bde47b9acf504c31acd0d32, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'ExEVHWeNPAn-Xc_8ICLsKJh2YpNAA-NYhISxs8J1JF8'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "2cbc0c767bde47b9acf504c31acd0d32"} 
+
+ERROR [2020-08-11 10:03:25] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:03:28] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=929c20ad6af24fb89717dbd8a4a961d8, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'PB048AFjW-4OJ7CimCKYrkVvmBuauD-6JB4JYEDEh6s'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "929c20ad6af24fb89717dbd8a4a961d8"} 
+
+ERROR [2020-08-11 10:03:28] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:04:12] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17792 11948 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=55bc8891090a4ec6af5f8fb9fae7f735, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '6w31MkevTDeRqTtaq0fM4CDcd1egTgCywrf19QDmaqo'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "55bc8891090a4ec6af5f8fb9fae7f735"} 
+
+ERROR [2020-08-11 10:04:12] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17792 11948 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:04:52] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=b6acaa38bdb541d29e68d2c1f37055b2, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'GZLud5123-Pjqyc0Z5eFVJ9aoobxLBdMZVBqpEka8D4'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "b6acaa38bdb541d29e68d2c1f37055b2"} 
+
+ERROR [2020-08-11 10:04:52] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:05:04] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=e19fa3b51fd24b42b2511fadb22b776c, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'RXAniG3Nh483mzcNHjBrS0_tzCRrmtwW5kbjIdkLC-E'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "e19fa3b51fd24b42b2511fadb22b776c"} 
+
+ERROR [2020-08-11 10:05:04] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:05:07] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=2117c0aa4c454ff39142c755a66d197e, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'IdRFFKS8qGUJEG8TP8HKyZ3ZXaAyJqAo6O-uGtMJSMo'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "2117c0aa4c454ff39142c755a66d197e"} 
+
+ERROR [2020-08-11 10:05:07] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:05:11] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=4fd428a4266243e8be92d1a5132cf57f, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'oQtZ7GVfrXJRDso-1ms12W732vUO4Q0moDAqkiRKrbc'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "4fd428a4266243e8be92d1a5132cf57f"} 
+
+ERROR [2020-08-11 10:05:11] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:06:01] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=9b3fd430a5af44e99c5f3188f85892d7, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'ZF5cfx7NH9uWstEjnLlSShGrZTm1oM9pvEXJ7snJEpk'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "9b3fd430a5af44e99c5f3188f85892d7"} 
+
+ERROR [2020-08-11 10:06:01] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:06:17] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=63a3120442f045a2b01bc4b4acb3c5f6, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'njAC1_QMCDnH4pqXZECnuzZ6qIvQW0zrYAER144bPvs'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "63a3120442f045a2b01bc4b4acb3c5f6"} 
+
+ERROR [2020-08-11 10:06:17] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:06:31] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 11736 17884 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=9ee13e0610484bbf99e91fe04df55ace, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'L93qhmFWIvpUXD-k3c4PGUdb9Z6nt7yTxPdicTSRAHY'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "9ee13e0610484bbf99e91fe04df55ace"} 
+
+ERROR [2020-08-11 10:06:31] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 11736 17884 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:07:35] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 9152 12836 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=367773f6e86f4a96abb42c81675e713b, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'ljxtzMFNPPl_ml1zguQbR2ciB8j3punkGSv7OlRt0po'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "367773f6e86f4a96abb42c81675e713b"} 
+
+ERROR [2020-08-11 10:07:35] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 9152 12836 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:08:40] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 9152 12836 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=e53f9e0c2a384089829f1c305cf01d1d, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'TyrWHEc3tURlgftUZwYxvzmY6c4aLRxQ6HoXL80HzgY'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "e53f9e0c2a384089829f1c305cf01d1d"} 
+
+ERROR [2020-08-11 10:08:40] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 9152 12836 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:11:47] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 5068 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=47b6a9faf0e74286b097b037aea6ac4e, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'v8Ud1mPxNPyFtBywp_T43luygzIwLBNQwXvy2MY9D-U'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "47b6a9faf0e74286b097b037aea6ac4e"} 
+
+ERROR [2020-08-11 10:11:47] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 5068 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:11:54] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 5068 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=f1af519aba0f4dbfbd959752a02d0458, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'n5z1SIxUF5fpyxrWemQ_zj35-dEovZla9lQCKyFKPyA'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "f1af519aba0f4dbfbd959752a02d0458"} 
+
+ERROR [2020-08-11 10:11:54] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 5068 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:13:28] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 5068 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=e72e385597ce444ebd14cacd89932773, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'akLSmm61OUTCESm0-VbXO7z0l3lPHpCjRJ7mdn2mPCc'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "e72e385597ce444ebd14cacd89932773"} 
+
+ERROR [2020-08-11 10:13:28] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 5068 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:13:50] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=eaa90f4148dd4f1bab5209351fe067db, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'WLh3OVfdTkE9fuQ3dqlMtkwQlbecVzF1jPogPEJWDlA'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "eaa90f4148dd4f1bab5209351fe067db"} 
+
+ERROR [2020-08-11 10:13:50] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:13:54] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=cf4c52d877c14a8c9699f742926adfb9, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'zugigNjoP794EucU9tTMVUuK03x4RvoPCki8vg7d0DU'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "cf4c52d877c14a8c9699f742926adfb9"} 
+
+ERROR [2020-08-11 10:13:54] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:13:57] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=2d70ccad27ee4e2cbda21a6d91d68c6d, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '-i8ba65knkJW7l618clqThrBRw8DEmYGQSKWZfIwm04'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "2d70ccad27ee4e2cbda21a6d91d68c6d"} 
+
+ERROR [2020-08-11 10:13:57] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:14:00] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=427ed3025fdd4f32832c4a511fdf5c30, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'xRu230e8HZa-A8eNDeAmnzYOiBH4vvo4gsNBsqOHPj0'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "427ed3025fdd4f32832c4a511fdf5c30"} 
+
+ERROR [2020-08-11 10:14:00] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:14:11] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=0f0229dcb657468b82379cb7ae38475e, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '5iyASXF4U9xigso0539tVo3e1tdibr6C47mRcc-8Oc8'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "0f0229dcb657468b82379cb7ae38475e"} 
+
+ERROR [2020-08-11 10:14:11] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:14:15] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=11a06386c0214aa48d0874ac4bbcbf8d, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'NYIet2UEQ6S6m1IwgdkjFJQ9ERjz7hVvxOYKxJnDpJA'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "11a06386c0214aa48d0874ac4bbcbf8d"} 
+
+ERROR [2020-08-11 10:14:15] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:14:17] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17096 17188 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=3a75d3cc3b1f42b0a1a2f3485818d42d, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'h_FKoHLSs62Ol2nYlFGjmaXWJHmXlkZammFiU5MFBZE'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "3a75d3cc3b1f42b0a1a2f3485818d42d"} 
+
+ERROR [2020-08-11 10:14:17] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17096 17188 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:08] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=7cf8c84b28b2490c9f50f42a00de2b07, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'E3dm6cdS6Ta5otljCJP7mLnO5EiQCRY-Hg_EszYSIdQ'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "7cf8c84b28b2490c9f50f42a00de2b07"} 
+
+ERROR [2020-08-11 10:22:08] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:12] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=dfe4d6d16c7e49d2a23490d20606b072, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'AqbP-c5yzMwzl6GL2QVPTPGV0QRyXqgzxdL7CSqewV8'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "dfe4d6d16c7e49d2a23490d20606b072"} 
+
+ERROR [2020-08-11 10:22:12] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:15] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=bdb753b769f64dd98753272740577081, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'aklE4dfUxagpA0Mj5MrYFfCyckpuLkexMcrqs0_FLfw'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "bdb753b769f64dd98753272740577081"} 
+
+ERROR [2020-08-11 10:22:15] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:17] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=69f3d5498f1b40839d3800322e3f8ee5, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'UKpvP2nZ000EVbTsu6fB2vEN3WvtN9cXjx29k7DQorw'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "69f3d5498f1b40839d3800322e3f8ee5"} 
+
+ERROR [2020-08-11 10:22:17] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:28] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=34a60e4c666d4dc69c7c22b867e0fc32, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'RbfIY_pdIgLQmYDIWF-4vmxKpbJLy7YWM0iEFCWwMEM'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "34a60e4c666d4dc69c7c22b867e0fc32"} 
+
+ERROR [2020-08-11 10:22:28] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:31] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=e2362d0ce23f45e389c4032149be378d, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'v7jHKj3RdkR-8Mxe-sc0j3yj8uZhSzB48kRHOBMwohM'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "e2362d0ce23f45e389c4032149be378d"} 
+
+ERROR [2020-08-11 10:22:31] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:22:33] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15932 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=d5844c0fae7d419f94468ab8b7c90a4e, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'hj4Z9oR7zZkIhDARLrp2vJ0c22QyTu5tbspt9xUvZZU'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "d5844c0fae7d419f94468ab8b7c90a4e"} 
+
+ERROR [2020-08-11 10:22:33] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15932 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:00] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=5a85c0c7393d435cbce7d71df0b101dd, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'dk7ViDemT94-mjUYFkvkxhGC0OwWY9fPFEuj3o_6wHA'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "5a85c0c7393d435cbce7d71df0b101dd"} 
+
+ERROR [2020-08-11 10:29:00] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:03] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=a742b364850445e6b5af18a59c2b4369, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'zgeXKG1JCMC--7UQtDfyU4jPYrf4wmufU2HnX9Fdv74'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "a742b364850445e6b5af18a59c2b4369"} 
+
+ERROR [2020-08-11 10:29:03] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:07] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=b4f9aa6962b4488bb8547ab279dedf08, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'GZY5MnAaAqF7jcbrLxQp3Hl28ZJ9nblTRxIZdc6nf9E'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "b4f9aa6962b4488bb8547ab279dedf08"} 
+
+ERROR [2020-08-11 10:29:07] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:10] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=2de6de3c929742f6a85e64df9815fcdb, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'tWCrQBKN-DRDzeo47ws1xbh-nf4c6ym8Q7GIPKDwNu4'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "2de6de3c929742f6a85e64df9815fcdb"} 
+
+ERROR [2020-08-11 10:29:10] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:15] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=9d44fca2f38747e99f465cdfa5a633e1, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'PH4wcD8AynVZTfqafJfLhcwfht-NWVVzdfBs40aSfWk'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "9d44fca2f38747e99f465cdfa5a633e1"} 
+
+ERROR [2020-08-11 10:29:15] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:18] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=2201c8f981c14a81b635a0d19273f26e, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'ds2PqDC4TEUtYtyU3HK13cRQtAlndx9NflIddsDd9nQ'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "2201c8f981c14a81b635a0d19273f26e"} 
+
+ERROR [2020-08-11 10:29:18] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:21] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=dc02bcb474ea4977b167463035a13c4c, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '-uly40LCtM2oRZqmZF4U38MycmFkekkGuQmqxYzlW6c'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "dc02bcb474ea4977b167463035a13c4c"} 
+
+ERROR [2020-08-11 10:29:21] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:26] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 4216 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=db26720e92904e40838101682515a37f, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'CyATLUpOSy6bgILE3sRutuwb4ohnyC6aQF1C2NhJTHk'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "db26720e92904e40838101682515a37f"} 
+
+ERROR [2020-08-11 10:29:26] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 4216 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:29:39] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 4544 8816 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=995087f1460c4346a0e01bbd4bbed410, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '_WBxP-KdEPwZ7uYcz65onRCOJeIcqZMM9KSOy3VD4ms'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "995087f1460c4346a0e01bbd4bbed410"} 
+
+ERROR [2020-08-11 10:29:39] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4544 8816 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:35:30] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15612 1332 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=617937ae04d24d28b2644d108a13aef4, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '6YT9-VhMn1avivcyH8h0l14Cbfyt1_EzGP0TUNVb2YI'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "617937ae04d24d28b2644d108a13aef4"} 
+
+ERROR [2020-08-11 10:35:30] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15612 1332 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:35:32] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15612 1332 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=151b5fd25bd1436f82fcb226d3b93a50, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'tfc7BxemxJSwZNcczpRoEwaxan1-uLdxUvt5rGZjmaU'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "151b5fd25bd1436f82fcb226d3b93a50"} 
+
+ERROR [2020-08-11 10:35:32] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15612 1332 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:35:59] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15612 1332 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=711e1e0d6885409f9626b23d48db5e84, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'i4D8RaEjIvMeEXYJuN90fdKM08gPztPa9IoM7og1UsE'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "711e1e0d6885409f9626b23d48db5e84"} 
+
+ERROR [2020-08-11 10:35:59] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15612 1332 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:37:17] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 15612 1332 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=ecc20060e20e4bb5926e57942779da88, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'SEA1naSoFftcKJhEEsEKXX_DoskoPs2Du4Nu3hq3tvw'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "ecc20060e20e4bb5926e57942779da88"} 
+
+ERROR [2020-08-11 10:37:17] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 15612 1332 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:52:30] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17452 7432 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=446c4debcc654fe09699a459007bd7f0, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'PTWYWwtohLlFfUfcWdOIbis7gtBYVHiDoYpvxQaRuo4'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "446c4debcc654fe09699a459007bd7f0"} 
+
+ERROR [2020-08-11 10:52:30] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17452 7432 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:52:34] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17452 7432 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=c1363b833d334686aaae80d84daa17d8, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '1J5kmjKTI2r267l8mykKxKPjNSdPiamALfw_5t2kotI'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "c1363b833d334686aaae80d84daa17d8"} 
+
+ERROR [2020-08-11 10:52:34] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17452 7432 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 10:53:29] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 17452 7432 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=059487abffdd478b93f0bf29a87a9fff, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'NUsFfbRFDufKx9ndaBSztc2YfTIZczY7dXUrmViM-vI'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "059487abffdd478b93f0bf29a87a9fff"} 
+
+ERROR [2020-08-11 10:53:29] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 17452 7432 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 11:11:52] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 12816 7992 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=b7ce06ff532940edbd28381802fae545, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'Tu-y7fe7fOt6pwWP06rjlhL9hAN-OOPZkrjvpxe-kGQ'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "b7ce06ff532940edbd28381802fae545"} 
+
+ERROR [2020-08-11 11:11:52] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 12816 7992 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 11:11:55] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 12816 7992 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=93de03490b064385af6ef173d3467d0e, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'JjwpM61GCtR53-kpgSRiFdJgdYRxG6Tan27RMU8AZ5c'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "93de03490b064385af6ef173d3467d0e"} 
+
+ERROR [2020-08-11 11:11:55] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 12816 7992 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 11:13:34] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 12816 7992 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=8944d23835f8424d9517c73667c2f858, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '9zKQwofLsCbkxJjfxfbZAPczNiJ8o3u5uZ_6yzqUHtY'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "8944d23835f8424d9517c73667c2f858"} 
+
+ERROR [2020-08-11 11:13:34] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 12816 7992 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 11:13:37] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 12816 7992 
+ 	 Component return error message: APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, request_id=0ca9d1ae63094e5497eafa2987d61340, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': 'uvUBkULTJHKvsrA-6Pg6peMhd1y18XnvRhaKs7jOrMs'}, data={}, response={"message": "APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match", "code": 1306000, "data": null, "result": false, "request_id": "0ca9d1ae63094e5497eafa2987d61340"} 
+
+ERROR [2020-08-11 11:13:37] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 12816 7992 
+ 	 Failed to Get User Info: error=APP Secret verification failed, pelase confirm if the APP Secret and APP Code [bk_app_code=work] match, ret=None 
+
+ERROR [2020-08-11 11:42:31] F:\dxr\Myproject\work\blueking\component\base.py 73 _call 4464 9960 
+ 	 Error occurred when requesting method=GET url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/ 
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "D:\python\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "D:\python\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\urllib3\connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "D:\python\lib\site-packages\urllib3\connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\python\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\python\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\python\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\python\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "D:\python\lib\http\client.py", line 956, in send
+    self.connect()
+  File "D:\python\lib\site-packages\urllib3\connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "D:\python\lib\site-packages\urllib3\connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\python\lib\site-packages\urllib3\connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\python\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueking\component\base.py", line 70, in _call
+    resp = self.client.request(self.method, self.url, params=params, data=data)
+  File "F:\dxr\Myproject\work\blueking\component\client.py", line 100, in request
+    headers=headers, **kwargs)
+  File "D:\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+ERROR [2020-08-11 11:42:32] F:\dxr\Myproject\work\blueking\component\base.py 43 __call__ 4464 9960 
+ 	 Request component error, Exception: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/ 
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\urllib3\connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "D:\python\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "D:\python\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\urllib3\connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "D:\python\lib\site-packages\urllib3\connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\python\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\python\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\python\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\python\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "D:\python\lib\http\client.py", line 956, in send
+    self.connect()
+  File "D:\python\lib\site-packages\urllib3\connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "D:\python\lib\site-packages\urllib3\connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\python\lib\site-packages\urllib3\connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\python\lib\site-packages\urllib3\util\retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueking\component\base.py", line 70, in _call
+    resp = self.client.request(self.method, self.url, params=params, data=data)
+  File "F:\dxr\Myproject\work\blueking\component\client.py", line 100, in request
+    headers=headers, **kwargs)
+  File "D:\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueking\component\base.py", line 35, in __call__
+    return self._call(*args, **kwargs)
+  File "F:\dxr\Myproject\work\blueking\component\base.py", line 74, in _call
+    raise ComponentAPIException(self, u'Request component error, Exception: %s' % str(e))
+blueking.component.exceptions.ComponentAPIException: Request component error, Exception: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+ERROR [2020-08-11 11:42:32] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 4464 9960 
+ 	 Failed to Get User Info: error=Request component error, Exception: HTTPConnectionPool(host='paas.qy189.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/bk_login/get_user/?bk_app_code=work&bk_token=5PVuBDBRQGTv1FQxh5xsIzaEcTQ8wVAbXELAQNon8CQ&bk_app_secret=1d8c8108-6ec7-47fa-8756-f70b8a8bd698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000293B981A3C8>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。')), ret=None 
+
+ERROR [2020-08-13 09:00:28] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 13760 8648 
+ 	 Component return error message: User authentication failed, please check if the bk_token is valid, request_id=46189128396b4910876a64d015e03b8b, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '5umikUNmKc3xzSdPgeU2YKhckp5-uYgS5dbp2SHmikI'}, data={}, response={"message": "User authentication failed, please check if the bk_token is valid", "code": 1306000, "data": null, "result": false, "request_id": "46189128396b4910876a64d015e03b8b"} 
+
+ERROR [2020-08-13 09:00:28] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 13760 6108 
+ 	 Component return error message: User authentication failed, please check if the bk_token is valid, request_id=6bbb697331c24905800c963194c6a1ce, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '5umikUNmKc3xzSdPgeU2YKhckp5-uYgS5dbp2SHmikI'}, data={}, response={"message": "User authentication failed, please check if the bk_token is valid", "code": 1306000, "data": null, "result": false, "request_id": "6bbb697331c24905800c963194c6a1ce"} 
+
+ERROR [2020-08-13 09:00:28] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 13760 8648 
+ 	 Failed to Get User Info: error=User authentication failed, please check if the bk_token is valid, ret=None 
+
+ERROR [2020-08-13 09:00:28] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 13760 6108 
+ 	 Failed to Get User Info: error=User authentication failed, please check if the bk_token is valid, ret=None 
+
+ERROR [2020-08-13 09:00:28] F:\dxr\Myproject\work\blueking\component\base.py 94 _call 13760 4816 
+ 	 Component return error message: User authentication failed, please check if the bk_token is valid, request_id=ca4b214b2df14444941c0d580d9ae532, url=http://paas.qy189.com/api/c/compapi/v2/bk_login/get_user/, params={'bk_token': '5umikUNmKc3xzSdPgeU2YKhckp5-uYgS5dbp2SHmikI'}, data={}, response={"message": "User authentication failed, please check if the bk_token is valid", "code": 1306000, "data": null, "result": false, "request_id": "ca4b214b2df14444941c0d580d9ae532"} 
+
+ERROR [2020-08-13 09:00:28] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 145 get_user_info 13760 4816 
+ 	 Failed to Get User Info: error=User authentication failed, please check if the bk_token is valid, ret=None 
+
+ERROR [2020-08-13 15:41:23] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 166 verify_bk_token 13100 15120 
+ 	 Abnormal error in verify_bk_token... 
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py", line 164, in verify_bk_token
+    verify=False)
+  File "F:\dxr\Myproject\work\blueapps\account\utils\http.py", line 69, in send
+    raise ApiResultError(err_msg)
+blueapps.core.exceptions.base.ApiResultError
+ERROR [2020-08-14 09:05:30] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 177 verify_bk_token 16924 10916 
+ 	 Fail to verify bk_token, error=不存在该bk_token的记录, ret={} 
+
+ERROR [2020-08-17 09:08:55] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 166 verify_bk_token 3460 12808 
+ 	 Abnormal error in verify_bk_token... 
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py", line 164, in verify_bk_token
+    verify=False)
+  File "F:\dxr\Myproject\work\blueapps\account\utils\http.py", line 69, in send
+    raise ApiResultError(err_msg)
+blueapps.core.exceptions.base.ApiResultError
+ERROR [2020-08-17 09:09:57] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 166 verify_bk_token 3460 12808 
+ 	 Abnormal error in verify_bk_token... 
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py", line 164, in verify_bk_token
+    verify=False)
+  File "F:\dxr\Myproject\work\blueapps\account\utils\http.py", line 69, in send
+    raise ApiResultError(err_msg)
+blueapps.core.exceptions.base.ApiResultError
+ERROR [2020-08-17 09:10:33] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 166 verify_bk_token 14812 10812 
+ 	 Abnormal error in verify_bk_token... 
+Traceback (most recent call last):
+  File "F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py", line 164, in verify_bk_token
+    verify=False)
+  File "F:\dxr\Myproject\work\blueapps\account\utils\http.py", line 69, in send
+    raise ApiResultError(err_msg)
+blueapps.core.exceptions.base.ApiResultError
+ERROR [2020-08-18 08:24:33] F:\dxr\Myproject\work\blueapps\account\components\bk_token\backends.py 177 verify_bk_token 13916 15312 
+ 	 Fail to verify bk_token, error=登录态已过期, ret={} 
+
