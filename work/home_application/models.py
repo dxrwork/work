@@ -39,7 +39,7 @@ class workRecord(models.Model):
     会议记录
     """
     sort = models.CharField(u"会议类别", max_length=64)
-    theme = models.CharField(u"会议主题", max_length=64)
+    theme = models.CharField(u"会议主题", max_length=512)
     content = models.TextField(u"会议内容", null=True, blank=True)
     record_time = models.DateTimeField(u"会议时间", default=datetime.datetime.now)
     operator = models.CharField(u"记录人", max_length=64)

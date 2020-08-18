@@ -19,10 +19,12 @@ if RUN_VER == 'open':
 else:
     from blueapps.patch.settings_paas_services import *  # noqa
 
-# 预发布环境
-RUN_MODE = 'STAGING'
+# 正式环境
+RUN_MODE = 'PRODUCT'
 
-# 正式环境的日志级别可以在这里配置
+# 只对正式环境日志级别进行配置，可以在这里修改
+LOG_LEVEL = 'ERROR'
+
 # V2
 # import logging
 # logging.getLogger('root').setLevel('INFO')
@@ -31,16 +33,16 @@ RUN_MODE = 'STAGING'
 # logging.getLogger('app').setLevel('INFO')
 
 
-# 预发布环境数据库可以在这里配置
+# 正式环境数据库可以在这里配置
 
 DATABASES.update(
     {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'work',  # 数据库名
-            'USER': 'root',  # 数据库用户
-            'PASSWORD': '',  # 数据库密码
-            'HOST': '132.115.250.78',  # 数据库主机
+            'NAME': 'test2',  # 数据库名
+            'USER': 'qytest',  # 数据库用户
+            'PASSWORD': 'QYtelecom123',  # 数据库密码
+            'HOST': '132.115.200.8',  # 数据库主机
             'PORT': '3306',  # 数据库端口
         },
     }

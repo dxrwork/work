@@ -16,7 +16,6 @@ from django.http import HttpResponse
 import json
 from home_application.models import workRecord
 from log import logger
-from django.db import transaction
 
 # 1.导出excel的库
 import xlwt
@@ -24,7 +23,7 @@ import xlwt
 from io import BytesIO
 #导入
 import xlrd
-from xlrd import xldate_as_tuple
+
 
 # 开发框架中通过中间件默认是需要登录态的，如有不需要登录的，可添加装饰器login_exempt
 # 装饰器引入 from blueapps.account.decorators import login_exempt
@@ -50,13 +49,14 @@ def render_json(res_dict):
     return HttpResponse(json.dumps(res_dict), content_type='application/json')
 
 
-# 输入值提交请求
+# helloworld
 def say_hello(request):
     data = request.POST.get('input', None)
     data = 'Congratulations!'if data == 'Hello' else 'Try input Hello'
     res = {'data': data}
     return render_json(res)
 
+# 输入
 def save_record(request):
     """
     保存数据
@@ -75,7 +75,7 @@ def save_record(request):
 
     return render_json(result)
 
-
+# 显示
 def records(request):
     """
     查询记录
@@ -113,7 +113,6 @@ def search(request):
 
     return HttpResponse(mydata)
     return render(request,'chaxun.html')
-
 
 # 导出excel数据
 def export_excel(request):
@@ -208,8 +207,7 @@ def export_excel(request):
     response.write(output.getvalue())
     return response
 
-
-# 导入数据
+# 导入excel数据
 def excel_upload(request):
     if request.method == "POST":
 
@@ -230,10 +228,8 @@ def excel_upload(request):
                     # 行下标是从0开始；本人的excel表格第一行为列名，所以数据从第2行开始
                     list_data = []
                     for i in range(1, row_count):
-                        dict_row = {}
-                        dict_row['sort']=table.cell_value(i, 0)
-                        dict_row['theme']=table.cell_value(i, 1)
-                        dict_row['content']=table.cell_value(i, 2)
+                        dict_row = {'sort': table.cell_value(i, 0), 'theme': table.cell_value(i, 1),
+                                    'content': table.cell_value(i, 2)}
                         list_data.append(dict_row)
                     # 执行更新操作
                     for temp in list_data:

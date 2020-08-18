@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('sort', models.CharField(max_length=64, verbose_name='会议类别')),
-                ('theme', models.CharField(max_length=64, verbose_name='会议主题')),
+                ('theme', models.CharField(max_length=512, verbose_name='会议主题')),
                 ('content', models.TextField(blank=True, null=True, verbose_name='会议内容')),
                 ('record_time', models.DateTimeField(default=datetime.datetime.now, verbose_name='会议时间')),
                 ('operator', models.CharField(max_length=64, verbose_name='记录人')),
