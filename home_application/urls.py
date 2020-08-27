@@ -30,4 +30,5 @@ urlpatterns = (
     url(r'^getNo3/$', views.getNo3),
     url(r'^getNo4/$', views.getNo4),
     url(r'^research/$', views.research),
+    url(r'^export/$', views.export),
 )

@@ -113,7 +113,7 @@ def search(request):
     no21 = request.POST.get('no2')
     no31 = request.POST.get('no3')
     no41 = request.POST.get('no4')
-
+    keyword = request.POST.get('keyword')
     if no11 == '':
         no1 = no11
     else:
@@ -133,20 +133,33 @@ def search(request):
 
     mydata = []
     if no1 and no2 and no3 and no4:
-        result = workRecord.objects.filter(no1=no1,no2=no2,no3=no3,no4 = no4).values('id','no1','no2','no3','no4','appearance','measure')
+        result = workRecord.objects.filter(no4 = no4).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
     elif no1 and no2 and no3:
-        result = workRecord.objects.filter(no1=no1,no2=no2,no3 = no3).values('id','no1','no2','no3','no4','appearance','measure')
+        result = workRecord.objects.filter(no3 = no3).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
     elif no1 and no2:
-        result = workRecord.objects.filter(no1=no1,no2 = no2).values('id','no1','no2','no3','no4','appearance','measure')
+        result = workRecord.objects.filter(no2 = no2).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
-    else :
+    elif keyword:
+        mdata=[]
+        result1 = list(workRecord.objects.filter(no1__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result2 = list(workRecord.objects.filter(no2__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result3 = list(workRecord.objects.filter(no3__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result4 = list(workRecord.objects.filter(no4__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result5 = list(workRecord.objects.filter(appearance__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result6 = list(workRecord.objects.filter(measure__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result = result1+result2+result3+result4+result5+result6
+        for i in result:
+            if i not in mdata:
+                mdata.append(i)
+        mydata = json.dumps(mdata)
+    elif no1 :
         result = workRecord.objects.filter(no1 = no1).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
 
     return HttpResponse(mydata)
-    return render(request,'ebase.html')
+    return render(request,'meeting.html')
 
 # 导出excel数据
 def export_excel(request):
@@ -154,7 +167,7 @@ def export_excel(request):
     no21 = request.GET.get('name')
     no31 = request.GET.get('Key1')
     no41 = request.GET.get('name1')
-
+    keyword = request.GET.get('keyword')
     if no11 == '':
         no1 = no11
     else:
@@ -262,6 +275,31 @@ def export_excel(request):
             sheet.write(data_row,4,i.appearance)
             sheet.write(data_row,5,i.measure)
             data_row = data_row + 1
+    elif keyword:
+        # 写入数据
+        data_row = 1
+
+        mdata=[]
+        result1 = list(workRecord.objects.filter(no1__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result2 = list(workRecord.objects.filter(no2__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result3 = list(workRecord.objects.filter(no3__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result4 = list(workRecord.objects.filter(no4__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result5 = list(workRecord.objects.filter(appearance__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result6 = list(workRecord.objects.filter(measure__contains=keyword).values('id','no1','no2','no3','no4','appearance','measure'))
+        result = result1+result2+result3+result4+result5+result6
+        for i in result:
+            if i not in mdata:
+                mdata.append(i)
+        # UserTable.objects.all()这个是查询条件,可以根据自己的实际需求做调整.
+        for i in mdata:
+            # 格式化datetime
+            sheet.write(data_row,0,i['no1'])
+            sheet.write(data_row,1,i['no2'])
+            sheet.write(data_row,2,i['no3'])
+            sheet.write(data_row,3,i['no4'])
+            sheet.write(data_row,4,i['appearance'])
+            sheet.write(data_row,5,i['measure'])
+            data_row = data_row + 1
     else:
         # 写入数据
         data_row = 1
@@ -275,6 +313,54 @@ def export_excel(request):
             sheet.write(data_row,4,i.appearance)
             sheet.write(data_row,5,i.measure)
             data_row = data_row + 1
+
+    # 写出到IO
+    output = BytesIO()
+    wb.save(output)
+    # 重新定位到开始
+    output.seek(0)
+    response.write(output.getvalue())
+    return response
+
+# 导出模板
+def export(request):
+
+    # 设置HTTPResponse的类型
+    response = HttpResponse(content_type='application/vnd.ms-excel')
+    response['Content-Disposition'] = 'attachment;filename=example.xls'
+    # 创建一个文件对象
+    wb = xlwt.Workbook(encoding='utf8')
+    # 创建一个sheet对象
+    sheet = wb.add_sheet('order-sheet')
+
+	# 设置文件头的样式,这个不是必须的可以根据自己的需求进行更改
+    style_heading = xlwt.easyxf("""
+            font:
+                name Arial,
+                colour_index white,
+                bold on,
+                height 0xA0;
+            align:
+                wrap off,
+                vert center,
+                horiz center;
+            pattern:
+                pattern solid,
+                fore-colour 0x19;
+            borders:
+                left THIN,
+                right THIN,
+                top THIN,
+                bottom THIN;
+            """)
+
+    # 写入文件标题
+    sheet.write(0,0,'专业',style_heading)
+    sheet.write(0,1,'故障类型',style_heading)
+    sheet.write(0,2,'故障大类',style_heading)
+    sheet.write(0,3,'故障小类',style_heading)
+    sheet.write(0,4,'故障现象',style_heading)
+    sheet.write(0,5,'处理措施',style_heading)
 
     # 写出到IO
     output = BytesIO()
