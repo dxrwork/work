@@ -1,0 +1,617 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block head %}
+	<title>{% trans "蓝鲸开发框架" %}</title>
+	{{ block.super }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk_pack.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/bk/js/bk.js"></script>
+    <!-- 数据埋点统计 -->
+    <script src="http://magicbox.bk.tencent.com/static_api/analysis.js"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]><script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/html5shiv.min.js"></script><script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/respond.min.js"></script><![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+{% endblock %}
+
+{% block content %}
+    <style type="text/css">
+        #footer{
+            position: relative;
+            bottom: -40px;
+        }
+    </style>
+
+ <body class="bg-white" data-bg-color="bg-white">
+    <div class="king-page-box">
+        <div class="king-container clearfix">
+            <div class="king-block king-block-bordered king-block-themed mb0">
+                <div class="king-block-header king-info">
+                    <ul class="king-block-options">
+                        <li>
+                            <!-- <button type="button"><i class="fa fa-cog"></i></button> -->
+                        </li>
+                    </ul>
+                    <h3 class="king-block-title">设备及业务运营经验库</h3>
+                </div>
+                <div class="king-block-content">
+                    <div class="container-fluid mb0 ">
+                        <div class="row">
+                            <div class="col-md-2">
+                                 <div class="king-panel8 m15">
+                                    <div class="king-panel8-header">
+                                        <h3 class="king-panel8-title king-info">导航查询</h3>
+                                    </div>
+                                </div>
+
+                                <div class="s-side">
+                                    <ul>
+                                        <li class="first">
+                                            <div class="d-firstNav s-firstNav clearfix">
+                                                <i class="fa fa-bars"></i>
+                                                <span>核心网专业</span>
+                                                <i class="fa fa-caret-right fr "></i>
+                                            </div>
+                                            <ul class="d-firstDrop s-firstDrop">
+                                                <li>
+                                                    <div class="d-secondNav s-secondNav">
+                                                        <i class="fa fa-minus-square-o"></i>
+                                                        <span>设备硬件故障</span>
+                                                        <i class="fa fa-caret-right fr"></i>
+                                                    </div>
+                                                    <ul class="d-secondDrop s-secondDrop">
+                                                        <li class="s-thirdItem">
+                                                            <a id="t1" onclick="research(this)">固网BAC</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t2" onclick="research(this)">固网MGW</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t3" onclick="research(this)">C网MGW</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t4" onclick="research(this)">C网CE</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <div class="d-secondNav s-secondNav">
+                                                        <i class="fa fa-minus-square-o"></i>
+                                                        <span>数据配置故障</span>
+                                                        <i class="fa fa-caret-right fr "></i>
+                                                    </div>
+                                                    <ul class="d-secondDrop s-secondDrop">
+                                                        <li class="s-thirdItem">
+                                                            <a id="t5" onclick="research(this)">MGCF55/56网间中继数据配置</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t6" onclick="research(this)">C网MSCe小区固话CI数据配置</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t7" onclick="research(this)">MGW信令链路收敛数据配置</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t8" onclick="research(this)">紧急特服应急数据配置</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t9" onclick="research(this)">12345热线应急数据配置</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                <!--<li class="s-secondItem">
+                                                    <a href="">-->
+                                                    <div class="d-secondNav s-secondNav">
+                                                        <i class="fa fa-minus-square-o"></i>
+                                                        <span>网络组网故障</span>
+                                                        <i class="fa fa-caret-right fr "></i>
+                                                    </div>
+                                                    <ul class="d-secondDrop s-secondDrop">
+                                                        <li class="s-thirdItem">
+                                                            <a id="t10" onclick="research(this)">本网网内</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t11" onclick="research(this)">互联互通网络</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <div class="d-secondNav s-secondNav">
+                                                        <i class="fa fa-minus-square-o"></i>
+                                                        <span>应用业务故障</span>
+                                                        <i class="fa fa-caret-right fr "></i>
+                                                    </div>
+                                                    <ul class="d-secondDrop s-secondDrop">
+                                                        <li class="s-thirdItem">
+                                                            <a id="t12" onclick="research(this)">客户数字中继</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t13" onclick="research(this)">VOLTE业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t14" onclick="research(this)">携号转网业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t15" onclick="research(this)">话务台业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t16" onclick="research(this)">互联互通业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t17" onclick="research(this)">云录音业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t18" onclick="research(this)">NGCC业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t19" onclick="research(this)">4008业务申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t20" onclick="research(this)">骚扰诈骗工单</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t21" onclick="research(this)">国际高结算工单</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t22" onclick="research(this)">天翼蓝盾拦截工单</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t23" onclick="research(this)">集团异常话务系统拦截工单</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t24" onclick="research(this)">电话核查系统工单申告</a>
+                                                        </li>
+                                                        <li class="s-thirdItem">
+                                                            <a id="t25" onclick="research(this)">10000999系统工单申告</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="first">
+                                            <div class="d-firstNav s-firstNav">
+                                                <i class="fa fa-bars"></i>
+                                                <span>互联网+专业</span>
+                                                <i class="fa fa-caret-right fr" ></i>
+                                            </div>
+                                        </li>
+                                        <li class="first">
+                                            <div class="d-firstNav s-firstNav">
+                                                <i class="fa fa-bars"></i>
+                                                <span>数据专业</span>
+                                                <i class="fa fa-caret-right fr" ></i>
+                                            </div>
+                                        </li>
+                                        <li class="first">
+                                            <div class="d-firstNav s-firstNav">
+                                                <i class="fa fa-bars"></i>
+                                                <span>承载网专业</span>
+                                                <i class="fa fa-caret-right fr" ></i>
+                                            </div>
+                                        </li>
+                                        <li class="first">
+                                            <div class="d-firstNav s-firstNav">
+                                                <i class="fa fa-bars"></i>
+                                                <span>动力专业</span>
+                                                <i class="fa fa-caret-right fr" ></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+
+                                <div class="king-panel8 m15">
+                                    <div class="king-panel8-header">
+                                        <h3 class="king-panel8-title king-info">信息查询录入</h3>
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid mb0 ">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group clearfix ">
+                                                <label class="col-sm-3 control-label bk-lh30 pt0">专业：</label>
+                                                <div class="col-sm-9">
+                                                    <select name="" id="no1" class="form-control bk-valign-top">
+                                                        <option value="" >请选择专业</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix ">
+                                                <label class="col-sm-3 control-label bk-lh30 pt0">故障类型：</label>
+                                                <div class="col-sm-9">
+                                                    <select name="" id="no2" class="form-control bk-valign-top">
+                                                        <option value="" >请选择故障类型</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix ">
+                                                <label class="col-sm-3 control-label bk-lh30 pt0">故障大类：</label>
+                                                <div class="col-sm-9">
+                                                    <select name="" id="no3" class="form-control bk-valign-top">
+                                                        <option value="" >请选择故障大类</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix ">
+                                                <label class="col-sm-3 control-label bk-lh30 pt0">故障小类：</label>
+                                                <div class="col-sm-9">
+                                                    <select name="" id="no4" class="form-control bk-valign-top">
+                                                        <option value="">请选择故障小类</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix">
+                                                <div class="col-sm-9 col-sm-offset-3">
+                                                    <label>查询：</label>
+                                            	    <button type="button" class="king-btn king-default" onclick="search(this)">查询</button>
+                                                    <button type="button" class="king-btn king-default "onclick="cancel(this)">取消</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group has-feedback clearfix ">
+                                                <label class="control-label col-sm-3 pt0" for="introduction">故障现象：</label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" rows="3" id="appearance" placeholder="请输入故障现象描述"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group has-feedback clearfix ">
+                                                <label class="control-label col-sm-3 pt0" for="introduction">处理措施：</label>
+                                                <div class="col-sm-9">
+                                                    <textarea class="form-control" rows="3" id="measure" placeholder="请输入处理措施"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix ">
+                                               <div class="col-sm-9 col-sm-offset-3">
+                                                  &nbsp;&nbsp;&nbsp;
+                                                 <label>录入：</label>
+                                                 <button type="button" class="king-btn king-default"onclick="save_record(this)">提交</button>
+                                                 <button type="button" class="king-btn king-default "onclick="cancel(this)">取消</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="container-fluid mb0 ">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="king-panel8 m15">
+                                                <div class="king-panel8-header">
+                                                    <h3 class="king-panel8-title king-info">导入导出</h3>
+                                                </div>
+                                                <div class="king-panel8-content pt25">
+                                                    <form action="{{ SITE_URL }}excel_upload/" method="post" enctype="multipart/form-data">
+                                                        {% csrf_token %}
+                                                        <input type="file" name="mfile">
+                                                        <button type="submit" class="king-btn king-default " style="width:90px;height:30px">导入</button>
+                                                    </form>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a href="" onclick="getkey(this)">
+                                                        <button  type="button" class="king-btn king-default "style="width:90px;height:30px" >导出</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="king-panel8 m15">
+                                                <div class="king-panel8-header">
+                                                    <h3 class="king-panel8-title king-info">信息展示</h3>
+                                                </div>
+                                                <div class="king-panel8-content pt25">
+                                                    <div style="height:310px; overflow: auto;" id="list_1526104329322" class="king-list3 m0">
+                                                        <table class="king-list3-table ranger-box">
+                                                            <thead>
+                                                            <tr>
+                                                                <th style="width:5%;text-align:center;vertical-align:middle;margin:auto">序号</th>
+                                                                <th style="width:10%;text-align:center;vertical-align:middle;margin:auto">专业</th>
+                                                                <th style="width:10%;text-align:center;vertical-align:middle;margin:auto">故障类型</th>
+                                                                <th style="width:10%;text-align:center;vertical-align:middle;margin:auto">故障大类</th>
+                                                                <th style="width:10%;text-align:center;vertical-align:middle;margin:auto">故障小类</th>
+                                                                <th style="width:25%;text-align:center;vertical-align:middle;margin:auto">故障现象</th>
+                                                                <th style="width:30%;text-align:center;vertical-align:middle;margin:auto">处理措施</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody></tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- 设置面板Start -->
+                                                    <template id="ranger_nodata_tpl">
+                                                        <tr>
+                                                            <td colspan="3"> 没有数据 </td>
+                                                        </tr>
+                                                    </template>
+                                                    <template id="ranger_tpl">
+                                                        <tr>
+                                                            <td style="width:5%;text-align:center;vertical-align:middle;margin:auto">#id#</td>
+                                                            <td style="width:10%;text-align:center;vertical-align:middle;margin:auto">#no1#</td>
+                                                            <td style="width:10%;text-align:center;vertical-align:middle;margin:auto">#no2#</td>
+                                                            <td style="width:10%;text-align:center;vertical-align:middle;margin:auto">#no3#</td>
+                                                            <td style="width:10%;text-align:center;vertical-align:middle;margin:auto">#no4#</td>
+                                                            <td style="width:25%;text-align:center;vertical-align:middle;margin:auto">#appearance#</td>
+                                                            <td style="width:30%;text-align:center;vertical-align:middle;margin:auto">#measure#</td>
+                                                        </tr>
+                                                    </template>
+                                                    <!-- 设置面板End -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+{% endblock %}
+
+{% block extra_block %}
+    <!--左侧导航-->
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/index.js" ></script>
+
+ <script>
+ //下拉框联动
+ $(function(){
+    // 获取1
+     $.get('{{SITE_URL}}getNo1/',function(data){
+         for(var i = 0,len = data.no1.length; i<len ;i++){
+             $new = $("<option value="+data.no1[i][0] +">"+  data.no1[i][1]  +"</option>" );
+             $("#no1").append( $new );
+         }
+     });
+
+     //改变1后
+     $("#no1").change(function(){
+         //清空2/3/4
+         $("#no2").empty().append('<option value="">请选择故障类型</option>');
+         $("#no3").empty().append('<option value="">请选择故障大类</option>');
+         $("#no4").empty().append('<option value="">请选择故障小类</option>');
+         $.ajax({
+             url:'{{SITE_URL}}getNo2/',
+             type:'get',
+             data:{"no2_id":$(this).val()}
+         }).done(function(data){
+             for(var i = 0,len = data.no2.length; i<len ;i++){
+                 $new = $( "<option value="+data.no2[i][0] +">"+  data.no2[i][1]  +"</option>" );
+                 $("#no2").append( $new );
+             }
+         });
+     });
+
+     //改变2后
+     $("#no2").change(function(){
+         //清空3/4
+         $("#no3").empty().append('<option value="">请选择故障大类</option>');
+         $("#no4").empty().append('<option value="">请选择故障小类</option>');
+         $.ajax({
+             url:'{{SITE_URL}}getNo3/',
+             type:'get',
+             data:{"no3_id":$(this).val()}
+         }).done(function(data){
+             for(var i = 0,len = data.no3.length; i<len ;i++){
+                 $new = $( "<option value="+data.no3[i][0] +">"+  data.no3[i][1]  +"</option>" );
+                 $("#no3").append($new );
+             }
+         });
+     });
+
+     //改变3后
+     $("#no3").change(function(){
+         //清空3/4
+         $("#no4").empty().append('<option value="">请选择故障小类</option>');
+         $.ajax({
+             url:'{{SITE_URL}}getNo4/',
+             type:'get',
+             data:{"no4_id":$(this).val()}
+         }).done(function(data){
+             for(var i = 0,len = data.no4.length; i<len ;i++){
+                 $new = $( "<option value="+data.no4[i][0] +">"+  data.no4[i][1]  +"</option>" );
+                 $("#no4").append($new );
+             }
+         });
+     });
+ })
+
+ //左边菜单
+ function research(obj){
+         var id =obj.id;
+         var a =document.getElementById(id).childNodes[0].data;
+         //console.log(a);
+         var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+         $.post('{{SITE_URL}}research/', {'Key':a, "csrfmiddlewaretoken":csrf}, function(data){
+                //console.log(111111111111);
+                if(data){
+                    var _html = ' ';
+                    var list = data;
+                    var tpl =$('#ranger_tpl').html();
+                    if (list.length == 0){
+                        _html = $('#ranger_nodata_tpl').html();
+                    }else{
+                        for (var i=0,len=list.length; i < len; i++){
+                            var item = list[i];
+                            _html += renderTpl(tpl, item)
+                        }
+                    }
+                    $('#list_1526104329322').find('.ranger-box tbody').html(_html);
+
+                    alert("查询成功")
+                }else{
+                    alert("获取失败")
+                }
+        }, 'json');
+    }
+
+ //数据显示
+ function renderTpl(str, cfg) {
+     var re = /(#(.+?)#)/g;
+
+     return str.replace(re, function() {
+         var val = cfg[arguments[2]]+'';
+         if(typeof val == 'undefined') {
+             val = '';
+         }
+         return val;
+     });
+ }
+
+ function initRanger(conf){
+   // 异步请求后台数据
+     $.ajax({
+         url: conf.url,
+         type: 'GET',
+         dataType: conf.dataType,
+         success: function(res){
+             //获取数据成功
+             if (res.code == 0){
+                 var _html = ' ';
+                 var list = res.data;
+                 //console.log(list.id)
+                 var tpl = $('#ranger_tpl').html();
+                 if (list.length == 0){
+                     _html = $('#ranger_nodata_tpl').html();
+                 }else{
+                     for (var i=0,len=list.length; i < len; i++){
+                         var item = list[i];
+                         _html += renderTpl(tpl, item)
+                     }
+                 }
+                 $(conf.container).html(_html);
+             }
+         }
+     });
+ }
+
+ //查询键
+ function search(obj){
+        var no1 = $('#no1').val();
+        var no2 = $('#no2').val();
+        var no3 = $('#no3').val();
+        var no4 = $('#no4').val();
+        var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+        $.post('{{SITE_URL}}search/', {'no1':no1,'no2': no2, 'no3': no3,'no4':no4, "csrfmiddlewaretoken":csrf}, function(data){
+                if(data){
+                    var _html = ' ';
+                    var list = data;
+                    var tpl =$('#ranger_tpl').html();
+                    if (list.length == 0){
+                        _html = $('#ranger_nodata_tpl').html();
+                    }else{
+                        for (var i=0,len=list.length; i < len; i++){
+                            var item = list[i];
+                            _html += renderTpl(tpl, item)
+                        }
+                    }
+                    $('#list_1526104329322').find('.ranger-box tbody').html(_html);
+
+                    alert("查询成功")
+                }else{
+                    alert("获取失败")
+                }
+        }, 'json');
+    }
+
+// 导出键
+ function getkey(a) {
+        var pms = 'Key=' + document.getElementById("no1").value;
+        var pns = 'name=' + document.getElementById("no2").value;
+        var pos = 'Key1=' + document.getElementById("no3").value;
+        var pps = 'name1=' + document.getElementById("no4").value;
+        a.href = '{{ SITE_URL }}export_excel/?' + pms+ '&'+ pns+ '&'+ pos+ '&'+ pps;
+ }
+
+// 取消键
+ function cancel(obj){
+        let input1 = $("#no1");
+        let input2 = $("#no2");
+        let input3 = $("#no3");
+        let input4 = $("#no4");
+        let input5 = $("#appearance");
+        let input6 = $("#measure");
+        input1.val("");
+        input2.val("");
+        input3.val("");
+        input4.val("");
+        input5.val("");
+        input6.val("");
+ }
+
+//提交键
+ function save_record(obj){
+        var no1 = $('#no1').val();
+        var no2 = $('#no2').val();
+        var no3 = $('#no3').val();
+        var no4 = $('#no4').val();
+        var appearance = $('#appearance').val();
+        var measure = $('#measure').val();
+        var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+        $.post('{{SITE_URL}}save_record/', {'no1':no1,'no2': no2, 'no3': no3,'no4':no4,'appearance': appearance, 'measure': measure, "csrfmiddlewaretoken":csrf}, function(data){
+            //console.log(data)
+            if(data.result){
+                initRanger({
+                    url: '{{SITE_URL}}records/',
+                    dataType: 'json',
+                    container: '#list_1526104329322 .ranger-box tbody'
+                });
+                alert("提交成功")
+            }else{
+                alert(data.message)
+            }
+        }, 'json');
+        let input1 = $("#no1");
+        let input2 = $("#no2");
+        let input3 = $("#no3");
+        let input4 = $("#no4");
+        let input5 = $("#appearance");
+        let input6 = $("#measure");
+        input1.val("");
+        input2.val("");
+        input3.val("");
+        input4.val("");
+        input5.val("");
+        input6.val("");
+ }
+
+
+ </script>
+
+<script>
+    //获取记录
+    initRanger({
+            url: '{{SITE_URL}}records/',
+            dataType: 'json',
+            container: '#list_1526104329322 .ranger-box tbody'
+        });
+</script>
+
+ {% endblock %}

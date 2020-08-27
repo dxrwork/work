@@ -19,13 +19,16 @@ from django.db import models
 class workRecordManager(models.Manager):
     def save_record(self, data):
         """
-        保存会议记录
+        保存记录
         """
         try:
             workRecord.objects.create(
-                sort=data.get('sort'),
-                theme=data.get('theme'),
-                content=data.get('content'),
+                no1=data.get('no1'),
+                no2=data.get('no2'),
+                no3=data.get('no3'),
+                no4=data.get('no4'),
+                appearance=data.get('appearance'),
+                measure=data.get('measure'),
                 operator=data.get('username'),
             )
             result = {'result': True, 'message': u"保存成功"}
@@ -38,17 +41,33 @@ class workRecord(models.Model):
     """
     会议记录
     """
-    sort = models.CharField(u"会议类别", max_length=64)
-    theme = models.CharField(u"会议主题", max_length=512)
-    content = models.TextField(u"会议内容", null=True, blank=True)
-    record_time = models.DateTimeField(u"会议时间", default=datetime.datetime.now)
+    no1 = models.CharField(u"专业", max_length=64)
+    no2 = models.CharField(u"故障类型", max_length=64)
+    no3 = models.CharField(u"故障大类", max_length=64)
+    no4 = models.CharField(u"故障小类", max_length=64)
+    appearance = models.TextField(u"故障现象", null=True, blank=True)
+    measure = models.TextField(u"处理措施", null=True, blank=True)
+    record_time = models.DateTimeField(u"记录时间", default=datetime.datetime.now)
     operator = models.CharField(u"记录人", max_length=64)
     objects = workRecordManager()
 
     def __unicode__(self):
-        return self.theme
+        return self.no1
 
     class Meta:
-        verbose_name = u"会议记录"
-        verbose_name_plural = u"会议记录"
+        verbose_name = u"信息记录"
+        verbose_name_plural = u"信息记录"
+        db_table = 'workrecord'
+
+
+# 建立城市自关联数据库表
+class AreaInfo(models.Model):
+     atitle = models.CharField(max_length=30)
+     aParent = models.ForeignKey('self',null=True,blank=True,on_delete=models.DO_NOTHING)
+
+     def __str__(self):
+         return self.atitle
+
+     class Meta:
+         db_table = 'areas'  # 指定表名称
 

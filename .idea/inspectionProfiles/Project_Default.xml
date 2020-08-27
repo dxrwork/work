@@ -6,7 +6,6 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="home_application.views.*" />
-          <option value="transaction" />
         </list>
       </option>
     </inspection_tool>

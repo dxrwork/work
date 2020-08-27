@@ -11,12 +11,14 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 specific language governing permissions and limitations under the License.
 """
 
+from django.shortcuts import render_to_response
 from django.shortcuts import render
 from django.http import HttpResponse
 import json
 from home_application.models import workRecord
+from home_application.models import AreaInfo
 from log import logger
-
+from django.http import JsonResponse
 # 1.导出excel的库
 import xlwt
 # 2.实现了在内存中读写bytes
@@ -36,43 +38,51 @@ def dev_guide(request):
 def contact(request):
     return render(request, 'home_application/contact.html')
 
-def helloworld(request):
-    return render(request, 'home_application/helloworld.html')
-
-def meeting(request):
-    return render(request, 'home_application/meeting.html')
-
-def chaxun(request):
-    return render(request, 'home_application/chaxun.html')
+def ebase(request):
+    return render(request, 'home_application/ebase.html')
 
 def render_json(res_dict):
     return HttpResponse(json.dumps(res_dict), content_type='application/json')
-
-
-# helloworld
-def say_hello(request):
-    data = request.POST.get('input', None)
-    data = 'Congratulations!'if data == 'Hello' else 'Try input Hello'
-    res = {'data': data}
-    return render_json(res)
 
 # 输入
 def save_record(request):
     """
     保存数据
     """
-    sort = request.POST.get('sort', '')
-    theme = request.POST.get('theme', '')
-    content = request.POST.get('content', '')
+    no11 = request.POST.get('no1', '')
+    no21 = request.POST.get('no2', '')
+    no31 = request.POST.get('no3', '')
+    no41 = request.POST.get('no4', '')
+    appearance = request.POST.get('appearance', '')
+    measure = request.POST.get('measure', '')
+
+    if no11 == '':
+        no1 = no11
+    else:
+        no1 = AreaInfo.objects.get(id = no11).atitle
+    if no21 == '':
+        no2 = no21
+    else:
+        no2 = AreaInfo.objects.get(id = no21).atitle
+    if no31 == '':
+        no3 = no31
+    else:
+        no3 = AreaInfo.objects.get(id = no31).atitle
+    if no41 == '':
+        no4 = no41
+    else:
+        no4 = AreaInfo.objects.get(id = no41).atitle
 
     data = {
-        'sort': sort,
-        'theme': theme,
-        'content': content,
+        'no1': no1,
+        'no2': no2,
+        'no3': no3,
+        'no4': no4,
+        'appearance': appearance,
+        'measure': measure,
         'username': request.user.username,
     }
     result = workRecord.objects.save_record(data)
-
     return render_json(result)
 
 # 显示
@@ -84,10 +94,13 @@ def records(request):
     data = []
     for index, record in enumerate(record_list):
         data.append({
-            'id': index,
-            'sort': record.sort,
-            'theme': record.theme,
-            'content': record.content,
+            'id': index+1,
+            'no1': record.no1,
+            'no2': record.no2,
+            'no3': record.no3,
+            'no4': record.no4,
+            'appearance': record.appearance,
+            'measure': record.measure,
         })
     return render_json({'code': 0, 'message': 'success', 'data': data})
 
@@ -96,32 +109,72 @@ def search(request):
     """
     查询数据
     """
-    sort = request.POST.get('sort')
-    theme = request.POST.get('theme')
-    #content = request.POST.get('content')
+    no11 = request.POST.get('no1')
+    no21 = request.POST.get('no2')
+    no31 = request.POST.get('no3')
+    no41 = request.POST.get('no4')
+
+    if no11 == '':
+        no1 = no11
+    else:
+        no1 = AreaInfo.objects.get(id = no11).atitle
+    if no21 == '':
+        no2 = no21
+    else:
+        no2 = AreaInfo.objects.get(id = no21).atitle
+    if no31 == '':
+        no3 = no31
+    else:
+        no3 = AreaInfo.objects.get(id = no31).atitle
+    if no41 == '':
+        no4 = no41
+    else:
+        no4 = AreaInfo.objects.get(id = no41).atitle
 
     mydata = []
-    if sort and theme:
-        result = workRecord.objects.filter(sort = sort,theme = theme).values('id','sort','theme','content')
+    if no1 and no2 and no3 and no4:
+        result = workRecord.objects.filter(no1=no1,no2=no2,no3=no3,no4 = no4).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
-    if sort:
-        result = workRecord.objects.filter(sort = sort).values('id','sort','theme','content')
+    elif no1 and no2 and no3:
+        result = workRecord.objects.filter(no1=no1,no2=no2,no3 = no3).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
-    if theme:
-        result = workRecord.objects.filter(theme = theme).values('id','sort','theme','content')
+    elif no1 and no2:
+        result = workRecord.objects.filter(no1=no1,no2 = no2).values('id','no1','no2','no3','no4','appearance','measure')
+        mydata = json.dumps(list(result))
+    else :
+        result = workRecord.objects.filter(no1 = no1).values('id','no1','no2','no3','no4','appearance','measure')
         mydata = json.dumps(list(result))
 
     return HttpResponse(mydata)
-    return render(request,'chaxun.html')
+    return render(request,'ebase.html')
 
 # 导出excel数据
 def export_excel(request):
-    sort = request.GET.get('Key')
-    theme = request.GET.get('name')
-    print(sort,theme)
+    no11 = request.GET.get('Key')
+    no21 = request.GET.get('name')
+    no31 = request.GET.get('Key1')
+    no41 = request.GET.get('name1')
+
+    if no11 == '':
+        no1 = no11
+    else:
+        no1 = AreaInfo.objects.get(id = no11).atitle
+    if no21 == '':
+        no2 = no21
+    else:
+        no2 = AreaInfo.objects.get(id = no21).atitle
+    if no31 == '':
+        no3 = no31
+    else:
+        no3 = AreaInfo.objects.get(id = no31).atitle
+    if no41 == '':
+        no4 = no41
+    else:
+        no4 = AreaInfo.objects.get(id = no41).atitle
+
     # 设置HTTPResponse的类型
     response = HttpResponse(content_type='application/vnd.ms-excel')
-    response['Content-Disposition'] = 'attachment;filename=meeting.xls'
+    response['Content-Disposition'] = 'attachment;filename=ebase.xls'
     # 创建一个文件对象
     wb = xlwt.Workbook(encoding='utf8')
     # 创建一个sheet对象
@@ -149,43 +202,65 @@ def export_excel(request):
             """)
 
     # 写入文件标题
-    sheet.write(0,0,'序号',style_heading)
-    sheet.write(0,1,'类别',style_heading)
-    sheet.write(0,2,'会议主题',style_heading)
-    sheet.write(0,3,'会议内容',style_heading)
+    sheet.write(0,0,'专业',style_heading)
+    sheet.write(0,1,'故障类型',style_heading)
+    sheet.write(0,2,'故障大类',style_heading)
+    sheet.write(0,3,'故障小类',style_heading)
+    sheet.write(0,4,'故障现象',style_heading)
+    sheet.write(0,5,'处理措施',style_heading)
 
-    if sort and theme:
+    if no1 and no2 and no3 and no4:
                 # 写入数据
         data_row = 1
         # UserTable.objects.all()这个是查询条件,可以根据自己的实际需求做调整.
-        for i in workRecord.objects.filter(sort = sort,theme = theme):
+        for i in workRecord.objects.filter(no1=no1,no2=no2,no3=no3,no4 = no4):
             # 格式化datetime
-            sheet.write(data_row,0,i.id)
-            sheet.write(data_row,1,i.sort)
-            sheet.write(data_row,2,i.theme)
-            sheet.write(data_row,3,i.content)
+            sheet.write(data_row,0,i.no1)
+            sheet.write(data_row,1,i.no2)
+            sheet.write(data_row,2,i.no3)
+            sheet.write(data_row,3,i.no4)
+            sheet.write(data_row,4,i.appearance)
+            sheet.write(data_row,5,i.measure)
             data_row = data_row + 1
-    elif sort:
+    elif no1 and no2 and no3:
                 # 写入数据
         data_row = 1
         # UserTable.objects.all()这个是查询条件,可以根据自己的实际需求做调整.
-        for i in workRecord.objects.filter(sort = sort):
+        for i in workRecord.objects.filter(no1=no1,no2=no2,no3=no3):
             # 格式化datetime
-            sheet.write(data_row,0,i.id)
-            sheet.write(data_row,1,i.sort)
-            sheet.write(data_row,2,i.theme)
-            sheet.write(data_row,3,i.content)
+            sheet.write(data_row,0,i.no1)
+            sheet.write(data_row,1,i.no2)
+            sheet.write(data_row,2,i.no3)
+            sheet.write(data_row,3,i.no4)
+            sheet.write(data_row,4,i.appearance)
+            sheet.write(data_row,5,i.measure)
             data_row = data_row + 1
-    elif theme:
+    elif no1 and no2:
         # 写入数据
         data_row = 1
         # UserTable.objects.all()这个是查询条件,可以根据自己的实际需求做调整.
-        for i in workRecord.objects.filter(theme = theme):
+        for i in workRecord.objects.filter(no1=no1,no2=no2):
             # 格式化datetime
-            sheet.write(data_row,0,i.id)
-            sheet.write(data_row,1,i.sort)
-            sheet.write(data_row,2,i.theme)
-            sheet.write(data_row,3,i.content)
+            sheet.write(data_row,0,i.no1)
+            sheet.write(data_row,1,i.no2)
+            sheet.write(data_row,2,i.no3)
+            sheet.write(data_row,3,i.no4)
+            sheet.write(data_row,4,i.appearance)
+            sheet.write(data_row,5,i.measure)
+            data_row = data_row + 1
+
+    elif no1:
+        # 写入数据
+        data_row = 1
+        # UserTable.objects.all()这个是查询条件,可以根据自己的实际需求做调整.
+        for i in workRecord.objects.filter(no1=no1):
+            # 格式化datetime
+            sheet.write(data_row,0,i.no1)
+            sheet.write(data_row,1,i.no2)
+            sheet.write(data_row,2,i.no3)
+            sheet.write(data_row,3,i.no4)
+            sheet.write(data_row,4,i.appearance)
+            sheet.write(data_row,5,i.measure)
             data_row = data_row + 1
     else:
         # 写入数据
@@ -193,10 +268,12 @@ def export_excel(request):
         # UserTable.objects.all()这个是查询条件,可以根据自己的实际需求做调整.
         for i in workRecord.objects.all():
             # 格式化datetime
-            sheet.write(data_row,0,i.id)
-            sheet.write(data_row,1,i.sort)
-            sheet.write(data_row,2,i.theme)
-            sheet.write(data_row,3,i.content)
+            sheet.write(data_row,0,i.no1)
+            sheet.write(data_row,1,i.no2)
+            sheet.write(data_row,2,i.no3)
+            sheet.write(data_row,3,i.no4)
+            sheet.write(data_row,4,i.appearance)
+            sheet.write(data_row,5,i.measure)
             data_row = data_row + 1
 
     # 写出到IO
@@ -228,15 +305,16 @@ def excel_upload(request):
                     # 行下标是从0开始；本人的excel表格第一行为列名，所以数据从第2行开始
                     list_data = []
                     for i in range(1, row_count):
-                        dict_row = {'sort': table.cell_value(i, 0), 'theme': table.cell_value(i, 1),
-                                    'content': table.cell_value(i, 2)}
+                        dict_row = {'no1': table.cell_value(i, 0), 'no2': table.cell_value(i, 1),
+                                    'no3': table.cell_value(i, 2),'no4': table.cell_value(i, 3),
+                                    'appearance': table.cell_value(i, 4), 'measure': table.cell_value(i, 5)}
                         list_data.append(dict_row)
                     # 执行更新操作
                     for temp in list_data:
                        workRecord.objects.create(operator=request.user.username,**temp)
-                    return render(request,'home_application/chaxun.html')
+                    return render(request,'home_application/ebase.html')
                 else:
-                    return render(request,'home_application/chaxun.html',{'message':"无可以导入的数据！"})
+                    return render(request,'home_application/ebase.html',{'message':"无可以导入的数据！"})
                 # ---------业务相关end----------
 
                 # 3.用完记得删除
@@ -248,9 +326,51 @@ def excel_upload(request):
         else:
             logger.error('上传文件类型错误！')
             print('33333')
-            return render(request,'home_application/chaxun.html',{'message':'导入失败'})
+            return render(request,'home_application/ebase.html',{'message':'导入失败'})
 
+#下拉框联动
+def getNo1(request):
+     no1 = AreaInfo.objects.filter(aParent__isnull = True)
+     res = []
+     for i in no1:
+         res.append( [i.id , i.atitle] )
+     return JsonResponse({'no1':res})
 
+def getNo2(request):
+    no2_id = request.GET.get('no2_id')
+    no2 = AreaInfo.objects.filter(aParent_id=no2_id)
+    res = []
+    for i in no2:
+        res.append([i.id, i.atitle])
+    return JsonResponse({'no2':res})
 
+def getNo3(request):
+    no3_id = request.GET.get('no3_id')
+    no3 = AreaInfo.objects.filter(aParent_id=no3_id)
+    res = []
+    for i in no3:
+        res.append([i.id, i.atitle])
+    return JsonResponse({'no3': res})
 
+ #获得4
 
+def getNo4(request):
+    no4_id = request.GET.get('no4_id')
+    no4 = AreaInfo.objects.filter(aParent_id=no4_id)
+    res = []
+    for i in no4:
+        res.append([i.id, i.atitle])
+    return JsonResponse({'no4': res})
+
+# 左侧菜单更新查找
+def research(request):
+
+    tag3 = request.POST.get('Key')
+    #print(tag3)
+    mydata = []
+    if tag3:
+        result = workRecord.objects.filter(no3=tag3).values('id','no1','no2','no3','no4','appearance','measure')
+        mydata = json.dumps(list(result))
+
+    return HttpResponse(mydata)
+    return render(result,'home_application/ebase.html')
