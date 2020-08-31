@@ -38,9 +38,9 @@ def get_env_or_raise(key):
 
 
 # 应用 ID
-APP_CODE = 'work'
+APP_CODE = 'test'
 # 应用用于调用云 API 的 Secret
-SECRET_KEY = '716e4b29-4826-4069-b2c8-51177134347d'
+SECRET_KEY = 'ee579ebd-f87b-4ee8-aae3-2a7fbf4fe4b0'
 
 # SaaS运行版本，如非必要请勿修改
 RUN_VER = 'open'
